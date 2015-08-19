@@ -1,0 +1,21 @@
+[core]
+	excludesfile = ~/.gitignore
+	editor = nano
+	autocrlf = input
+	whitespace = fix,space-before-tab,tab-in-indent,trailing-space
+[alias]
+	svnclone = svn clone --stdlayout
+	svnpush = svn dcommit
+    svnpull = svn rebase
+    stash-stretch =  "! git stash; git stretch; git stash pop"
+
+    lg1 = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue )%h%C(reset): %s%n''    %C(dim)%ar by %an%n' --all
+    lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
+    lg = !"git lg1"
+	stretch = pull --rebase
+
+[user]
+[credential]
+	helper = store
+[push]
+	default = current
