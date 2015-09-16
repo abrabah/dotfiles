@@ -1,2 +1,2 @@
 # dotfiles
-My dotfiles. Not yet usable
+My dotfiles. Not yet usable.
