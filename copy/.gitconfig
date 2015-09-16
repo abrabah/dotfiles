@@ -4,9 +4,6 @@
 	autocrlf = input
 	whitespace = fix,space-before-tab,tab-in-indent,trailing-space
 [alias]
-	svnclone = svn clone --stdlayout
-	svnpush = svn dcommit
-    svnpull = svn rebase
     stash-stretch =  "! git stash; git stretch; git stash pop"
 
     lg1 = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue )%h%C(reset): %s%n''    %C(dim)%ar by %an%n' --all
@@ -15,6 +12,8 @@
 	stretch = pull --rebase
 
 [user]
+	name = <INSERT NAME IN ~/.gitconfig file!>  
+	email = <INSERT EMAIL in ~/.gitconfig file!> 
 [credential]
 	helper = store
 [push]
