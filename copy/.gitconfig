@@ -6,7 +6,7 @@
 [alias]
     stash-stretch =  "! git stash; git stretch; git stash pop"
 
-    lg1 = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue )%h%C(reset): %s%n''    %C(dim)%ar by %an%n' --all
+    lg1 = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue )%h%C(reset): %s %C(    yellow)%d%n''    %C(dim)%ar by %an%n' --all
     lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
     lg = !"git lg1"
 	stretch = pull --rebase
